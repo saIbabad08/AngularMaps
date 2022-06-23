@@ -11,3 +11,5 @@
     - Number of pins
     - Elapsed time (start - end) of total rendering time
     - Total object (pin) memory allocation
+### Preview
+![image](https://user-images.githubusercontent.com/38107797/175249434-dbab6d7a-05b5-42c1-818e-550ecc541718.png)
