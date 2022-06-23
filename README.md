@@ -1,5 +1,4 @@
 # AngularMaps
-Angular (v10+) Based Application
 
 ## Aim to develop an Angular (v10+) based application that:
 - Is map-centric over Google Maps (get a free API key here),
@@ -12,5 +11,3 @@ Angular (v10+) Based Application
     - Number of pins
     - Elapsed time (start - end) of total rendering time
     - Total object (pin) memory allocation
-### Preview 
-![image](https://user-images.githubusercontent.com/38107797/175245235-0b8fcdab-755d-48ad-ac95-ff6ef7e5f3a6.png)
