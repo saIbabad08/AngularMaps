@@ -1,0 +1,14 @@
+
+
+       <h1 mat-dialog-title><strong>Markers Data</strong></h1>
+       <div mat-dialog-content>
+        <mat-card>
+          <span>Time taken :{{data.performanceStats.end-data.performanceStats.start}} ms </span>
+          <span>Markers Count : {{data.markers.length}}  </span>
+          <span>Marker Object Memory : {{data.sizeOfMarkers}} (bytes) </span>
+        </mat-card>
+       </div>
+       <div mat-dialog-actions>
+        <button mat-button (click)="closeDialog()" mat-stroked-button color="primary">Ok</button>
+      </div>
+

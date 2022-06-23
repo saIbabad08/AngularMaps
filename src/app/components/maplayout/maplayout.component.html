@@ -1,0 +1,31 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Angular Maps  </mat-card-title>
+    <button
+    mat-stroked-button
+    color="primary"
+    (click)="resetMap()"
+    class="btn-reset"
+  >
+    Reset Map
+  </button>
+  </mat-card-header>
+  <mat-card-content>
+    <google-map height="400px" width="100%" [center]="center" [zoom]="zoom">
+        <map-marker-clusterer [imagePath]="markerClustererImagePath">
+            <ng-container *ngIf="markers && markers.length > 0">
+          <map-marker
+            #markerEle="mapMarker" #markerElement
+            *ngFor="let marker of markers; trackBy: trackByIndex;let last = last"
+            [position]="marker"
+            (mapClick)="openInfoWindow(markerEle, marker)"
+          >{{last ? markerRendered() : ''}}
+            <map-info-window>
+              <div [innerHTML]="infoContent"></div>
+            </map-info-window>
+          </map-marker>
+        </ng-container>
+        </map-marker-clusterer>
+    </google-map>
+  </mat-card-content>
+</mat-card>
