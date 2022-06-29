@@ -8,7 +8,7 @@ export class MapService {
     
   RANGE: number = 12000;
    constructor(public dialog: MatDialog){}
-   driverManager(){
+   driverManager():google.maps.drawing.DrawingManager{
     return new google.maps.drawing.DrawingManager({
         drawingMode: google.maps.drawing.OverlayType.RECTANGLE,
         drawingControl: true,
